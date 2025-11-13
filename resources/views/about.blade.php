@@ -63,6 +63,11 @@
         .service-card {
             padding: 32px 16px;
         }
+    .testimonial-item {
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
     }
 </style>
 
@@ -123,15 +128,15 @@
                 <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
                     <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/about.jpg') }}" style="object-fit: cover;" alt="">
                     <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                        <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Tahun</span></h1>
+                        <h1 class="display-4 text-white mb-0">10 <span class="fs-4">Tahun</span></h1>
                         <h4 class="text-white">Berpengalaman</h4>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <h6 class="text-primary text-uppercase">// Tentang Kami //</h6>
-                <h1 class="mb-4"><span class="text-primary">GasHome</span> Is The Best Place For Your Auto Care</h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <h1 class="mb-4"><span class="text-primary">GasHome</span> Adalah Jasa Servis Kompor Gas & Water Heater Terpercaya di Jabodetabek</h1>
+                <p class="mb-4" style="text-align: justify; text-justify: inter-word;">GasHome menyediakan layanan servis kompor gas dan water heater panggilan untuk area Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Kami menangani berbagai kerusakan seperti kompor tidak menyala, api kecil, bau gas, water heater tidak panas, error, hingga penggantian sparepart. Dengan teknisi berpengalaman lebih dari 15 tahun dan peralatan lengkap, kami memastikan setiap perbaikan aman, cepat, dan bergaransi.</p>
                 <div class="row g-4 mb-3 pb-3">
                     <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                         <div class="d-flex">
@@ -139,8 +144,8 @@
                                 <span class="fw-bold text-secondary">01</span>
                             </div>
                             <div class="ps-3">
-                                <h6>Professional & Expert</h6>
-                                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                <h6 style="">Profesional & Berpengalaman</h6>
+                                <span style="text-align: justify; display: block; text-justify: inter-word;">Teknisi ahli dalam menangani servis kompor gas, water heater gas maupun listrik, serta pengecekan kebocoran gas. Sudah berpengalaman memperbaiki berbagai merek seperti Rinnai, Modena, Ariston, Electrolux, dan lainnya.</span>
                             </div>
                         </div>
                     </div>
@@ -150,8 +155,8 @@
                                 <span class="fw-bold text-secondary">02</span>
                             </div>
                             <div class="ps-3">
-                                <h6>Quality Servicing Center</h6>
-                                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                <h6 style="">Pelayanan Cepat & Berkualitas</h6>
+                                <span style="text-align: justify; display: block; text-justify: inter-word;">Kami mengutamakan kualitas servis dengan standar tinggi. Pemeriksaan dilakukan secara menyeluruh, hasil perbaikan rapi, dan menggunakan sparepart original untuk memastikan usia pakai lebih panjang.</span>
                             </div>
                         </div>
                     </div>
@@ -161,125 +166,97 @@
                                 <span class="fw-bold text-secondary">03</span>
                             </div>
                             <div class="ps-3">
-                                <h6>Awards Winning Workers</h6>
-                                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                <h6 style="">Teknisi Terpercaya & Bergaransi</h6>
+                                <span style="text-align: justify; display: block; text-justify: inter-word;">Setiap pekerjaan ditangani oleh teknisi bersertifikat dan menggunakan metode servis yang aman. Kami memberikan garansi untuk setiap layanan agar pelanggan merasa nyaman dan percaya.</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="" class="btn btn-primary py-3 px-5">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="{{ url('/contact') }}" class="btn btn-primary py-3 px-5" style="">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </div>
     </div>
 </div>
 <!-- About End -->
 
+    <style>
+        .gallery-img-wrapper {
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #eee;
+        }
+        @media (max-width: 576px) {
+            .gallery-img-wrapper {
+                aspect-ratio: 1/1;
+            }
+        }
+    </style>
 
-<!-- Fact Start -->
-<div class="container-fluid fact bg-dark my-5 py-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                <i class="fa fa-check fa-2x text-white mb-3"></i>
-                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                <p class="text-white mb-0">Years Experience</p>
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase">// Galeri //</h6>
+                <h1 class="mb-5">Galeri Dokumentasi</h1>
             </div>
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
-                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                <p class="text-white mb-0">Expert Technicians</p>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                <i class="fa fa-users fa-2x text-white mb-3"></i>
-                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                <p class="text-white mb-0">Satisfied Clients</p>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                <i class="fa fa-car fa-2x text-white mb-3"></i>
-                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                <p class="text-white mb-0">Compleate Projects</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fact End -->
 
+            <div class="owl-carousel testimonial-carousel position-relative">
 
- <!-- Team Start -->
- <div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-primary text-uppercase">// Our Technicians //</h6>
-            <h1 class="mb-5">Our Expert Technicians</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('carserv/img/team-1.jpg') }}" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/1.jpeg') }}" class="gallery-img" alt="Galeri 1">
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('carserv/img/team-2.jpg') }}" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/2.jpeg') }}" class="gallery-img" alt="Galeri 2">
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('carserv/img/team-3.jpg') }}" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/3.jpeg') }}" class="gallery-img" alt="Galeri 3">
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('carserv/img/team-4.jpg') }}" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/4.jpeg') }}" class="gallery-img" alt="Galeri 4">
                     </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/5.jpeg') }}" class="gallery-img" alt="Galeri 5">
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/6.jpeg') }}" class="gallery-img" alt="Galeri 6">
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ asset('carserv/img/7.jpeg') }}" class="gallery-img" alt="Galeri 7">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Team End -->
+
+
 
 @include('partials.footer')

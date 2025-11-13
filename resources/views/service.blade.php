@@ -130,101 +130,201 @@
 </div>
 <!-- Service End -->
 
-
-<!-- Booking Start -->
-<div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
+<!-- Brand Section Start -->
+<style>
+    /* Hilangkan scroll horizontal di mobile */
+    body, html {
+        overflow-x: hidden;
+    }
+    /* Fix untuk menghilangkan margin dan overflow */
+    .container, .container-xxl {
+        max-width: 100vw;
+        overflow-x: hidden;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    /* Brand wrapper row: pastikan tidak overflow */
+    .row.g-4.align-items-center.justify-content-center {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    /* Brand column: responsif di semua layar */
+    .brand-logo-col {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        margin-bottom: 1.5rem !important;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    @media (min-width: 576px) {
+        .brand-logo-col {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+    }
+    @media (min-width: 768px) {
+        .brand-logo-col {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    @media (min-width: 992px) {
+        .brand-logo-col {
+            flex: 0 0 16.6667%;
+            max-width: 16.6667%;
+        }
+    }
+    .brand-logo-col img {
+        max-width: 100%;
+        height: auto;
+        max-height:70px;
+        display: inline-block;
+    }
+</style>
+<div class="container-xxl py-5">
     <div class="container">
-        <div class="row gx-5">
-            <div class="col-lg-6 py-5">
-                <div class="py-5">
-                    <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                    <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-7 text-center">
+                <h6 class="text-primary text-uppercase">// Brand Kompor //</h6>
+                <h2 class="mb-4">Brand Kompor Yang Kami Layani</h2>
+            </div>
+        </div>
+        <div class="row g-4 align-items-center justify-content-center">
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-kompor-rinnai.png') }}" alt="Rinnai" class="img-fluid mb-2">
+                <div>Rinnai</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-kompor-modena.png') }}" alt="Modena" class="img-fluid mb-2">
+                <div>Modena</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-kompor-domo.png') }}" alt="Domo" class="img-fluid mb-2">
+                <div>Domo</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-kompor-rubenz.png') }}" alt="Rubenz" class="img-fluid mb-2">
+                <div>Rubenz</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-kompor-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
+                <div>Lainnya</div>
+            </div>
+        </div>
+        <hr class="my-5" />
+        <div class="row justify-content-center mb-4 mt-5">
+            <div class="col-lg-7 text-center">
+                <h6 class="text-primary text-uppercase">// Brand Water Heater //</h6>
+                <h2 class="mb-4">Brand Water Heater Yang Kami Layani</h2>
+            </div>
+        </div>
+        <div class="row g-4 align-items-center justify-content-center">
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-ariston.png') }}" alt="Ariston" class="img-fluid mb-2">
+                <div>Ariston</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-rheem.png') }}" alt="Rheem" class="img-fluid mb-2">
+                <div>Rheem</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-modena.png') }}" alt="Modena WH" class="img-fluid mb-2">
+                <div>Modena</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-paloma.png') }}" alt="Paloma" class="img-fluid mb-2">
+                <div>Paloma</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-rinnai.png') }}" alt="Rinnai WH" class="img-fluid mb-2">
+                <div>Rinnai</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
+                <div>Lainnya</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Brand Section End -->
+
+<!-- FAQ Section Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8 text-center">
+                <h6 class="text-primary text-uppercase">// FAQ //</h6>
+                <h2 class="mb-4">Pertanyaan yang Sering Diajukan</h2>
+            </div>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="faq1-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-body" aria-expanded="false" aria-controls="faq1-body">
+                        Apakah bisa servis di hari yang sama?
+                    </button>
+                </h2>
+                <div id="faq1-body" class="accordion-collapse collapse" aria-labelledby="faq1-header" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Bisa, kami usahakan teknisi datang di hari yang sama sesuai ketersediaan jadwal dan lokasi Anda.
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                    <h1 class="text-white mb-4">Book For A Service</h1>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <select class="form-select border-0" style="height: 55px;">
-                                    <option selected>Select A Service</option>
-                                    <option value="1">Service 1</option>
-                                    <option value="2">Service 2</option>
-                                    <option value="3">Service 3</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="date" id="date1" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0" placeholder="Special Request"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="faq2-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-body" aria-expanded="false" aria-controls="faq2-body">
+                        Apakah ada garansi setelah servis?
+                    </button>
+                </h2>
+                <div id="faq2-body" class="accordion-collapse collapse" aria-labelledby="faq2-header" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Ya, kami memberikan garansi pengerjaan dan sparepart (jika ada penggantian) sesuai ketentuan yang berlaku.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="faq3-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-body" aria-expanded="false" aria-controls="faq3-body">
+                        Bagaimana cara memesan layanan?
+                    </button>
+                </h2>
+                <div id="faq3-body" class="accordion-collapse collapse" aria-labelledby="faq3-header" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Anda bisa menghubungi kami melalui WhatsApp, telepon, atau form kontak yang tersedia di website ini.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="faq4-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-body" aria-expanded="false" aria-controls="faq4-body">
+                        Apakah menerima servis untuk apartemen atau kantor?
+                    </button>
+                </h2>
+                <div id="faq4-body" class="accordion-collapse collapse" aria-labelledby="faq4-header" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Tentu saja. Kami melayani servis di apartemen, kantor, restoran, maupun rumah tangga.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="faq5-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-body" aria-expanded="false" aria-controls="faq5-body">
+                        Apakah harga sudah termasuk sparepart?
+                    </button>
+                </h2>
+                <div id="faq5-body" class="accordion-collapse collapse" aria-labelledby="faq5-header" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Harga jasa servis belum termasuk sparepart. Jika ada penggantian, teknisi akan menginformasikan biaya sebelumnya.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Booking End -->
+<!-- FAQ Section End -->
 
-<!-- Testimonial Start -->
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="text-center">
-            <h6 class="text-primary text-uppercase">// Testimonial //</h6>
-            <h1 class="mb-5">Our Clients Say!</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel position-relative">
-            <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-1.jpg') }}" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Client Name</h5>
-                <p>Profession</p>
-                <div class="testimonial-text bg-light text-center p-4">
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-            <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-2.jpg') }}" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Client Name</h5>
-                <p>Profession</p>
-                <div class="testimonial-text bg-light text-center p-4">
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-            <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-3.jpg') }}" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Client Name</h5>
-                <p>Profession</p>
-                <div class="testimonial-text bg-light text-center p-4">
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-            <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-4.jpg') }}" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Client Name</h5>
-                <p>Profession</p>
-                <div class="testimonial-text bg-light text-center p-4">
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Testimonial End -->
+
 
 @include('partials.footer')
