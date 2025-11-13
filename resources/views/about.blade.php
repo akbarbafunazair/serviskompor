@@ -4,11 +4,11 @@
 <div class="container-fluid page-header mb-5 p-0" style="background-image: url({{ asset('carserv/img/carousel-bg-1.jpg') }});">
     <div class="container-fluid page-header-inner py-5">
         <div class="container text-center">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Tentang Kami</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Tentang Kami</li>
                 </ol>
             </nav>
         </div>
@@ -18,37 +18,95 @@
 
 
 <!-- Service Start -->
+<style>
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: #fff;
+        padding: 40px 32px 32px 32px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(60,60,60,.04);
+        transition:box-shadow .15s;
+    }
+    .service-icon {
+        font-size: 3rem;
+        color: #ff0000;
+        margin-bottom: 24px;
+    }
+    .service-card h5 {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 1.24rem;
+    }
+    .service-card p {
+        flex: 1 1 auto;
+        text-align: justify;
+        margin-bottom: 0;
+        min-height: 110px;
+    }
+    .service-link {
+        margin-top: 24px;
+        align-self: flex-start;
+        font-weight: 500;
+        color: #6c757d;
+        text-decoration: none;
+        border-bottom: 1.5px solid #6c757d;
+        transition: color 0.15s, border-color 0.15s;
+    }
+    .service-link:hover {
+        color: #ff0000;
+        border-color: #ff0000;
+        text-decoration: none;
+    }
+    @media (max-width: 991.98px) {
+        .service-card {
+            padding: 32px 16px;
+        }
+    }
+</style>
+
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex py-5 px-4">
-                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Quality Servicing</h5>
-                        <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                        <a class="text-secondary border-bottom" href="">Read More</a>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-card h-100">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-certificate"></i>
                     </div>
+                    <h5>Layanan Servis Berkualitas</h5>
+                    <p>
+                        Kami menyediakan layanan servis kompor gas dan water heater dengan standar tinggi. 
+                        Mulai dari perbaikan kompor yang tidak menyala, api kecil, bau gas, hingga water heater yang tidak panas. 
+                        Setiap pekerjaan dilakukan langsung oleh teknisi ahli untuk memastikan kualitas dan keamanan terbaik bagi Anda.
+                    </p>
+                    <a class="service-link" href="#">Hubungi Kami</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="d-flex bg-light py-5 px-4">
-                    <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Expert Workers</h5>
-                        <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                        <a class="text-secondary border-bottom" href="">Read More</a>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-card h-100 bg-light">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-users-cog"></i>
                     </div>
+                    <h5>Teknisi Ahli Berpengalaman</h5>
+                    <p>
+                        Tim kami berpengalaman menangani berbagai merek kompor dan water heater seperti Modena, Rinnai, Ariston, dan banyak lagi. 
+                        Setiap pemeriksaan dilakukan secara menyeluruh dengan pengerjaan yang teliti, serta selalu mengutamakan penggunaan sparepart original untuk hasil yang optimal.
+                    </p>
+                    <a class="service-link" href="#">Hubungi Kami</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="d-flex py-5 px-4">
-                    <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Modern Equipment</h5>
-                        <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                        <a class="text-secondary border-bottom" href="">Read More</a>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-card h-100">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-tools"></i>
                     </div>
+                    <h5>Peralatan Lengkap & Modern</h5>
+                    <p>
+                        Kami menggunakan peralatan servis yang lengkap dan modern untuk memastikan seluruh proses perbaikan berjalan lancar dan maksimal. 
+                        Dari pengecekan kebocoran gas hingga penggantian komponen penting, semua dilakukan sesuai standar keamanan demi kenyamanan Anda.
+                    </p>
+                    <a class="service-link" href="#">Hubungi Kami</a>
                 </div>
             </div>
         </div>
@@ -65,14 +123,14 @@
                 <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
                     <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/about.jpg') }}" style="object-fit: cover;" alt="">
                     <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                        <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Years</span></h1>
-                        <h4 class="text-white">Experience</h4>
+                        <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Tahun</span></h1>
+                        <h4 class="text-white">Berpengalaman</h4>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <h6 class="text-primary text-uppercase">// About Us //</h6>
-                <h1 class="mb-4"><span class="text-primary">CarServ</span> Is The Best Place For Your Auto Care</h1>
+                <h6 class="text-primary text-uppercase">// Tentang Kami //</h6>
+                <h1 class="mb-4"><span class="text-primary">GasHome</span> Is The Best Place For Your Auto Care</h1>
                 <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                 <div class="row g-4 mb-3 pb-3">
                     <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
