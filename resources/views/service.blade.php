@@ -326,5 +326,4 @@
 <!-- FAQ Section End -->
 
 
-
 @include('partials.footer')
