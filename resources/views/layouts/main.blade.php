@@ -91,40 +91,100 @@
 
 
     <!-- Service Start -->
+    <style>
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: #fff;
+            padding: 40px 32px 32px 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(60,60,60,.04);
+            transition:box-shadow .15s;
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #ff0000;
+            margin-bottom: 24px;
+        }
+        .service-card h5 {
+            margin-bottom: 16px;
+            font-weight: 700;
+            font-size: 1.24rem;
+        }
+        .service-card p {
+            flex: 1 1 auto;
+            text-align: justify;
+            margin-bottom: 0;
+            min-height: 110px;
+        }
+        .service-link {
+            margin-top: 24px;
+            align-self: flex-start;
+            font-weight: 500;
+            color: #6c757d;
+            text-decoration: none;
+            border-bottom: 1.5px solid #6c757d;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        .service-link:hover {
+            color: #ff0000;
+            border-color: #ff0000;
+            text-decoration: none;
+        }
+        @media (max-width: 991.98px) {
+            .service-card {
+                padding: 32px 16px;
+            }
+        .testimonial-item {
+        background: none !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+        }
+    </style>
+
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex py-5 px-4">
-                        <!-- Tidak pakai gambar, pakai icon -->
-                        <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Quality Servicing</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-card h-100">
+                        <div class="service-icon text-center">
+                            <i class="fa fa-certificate"></i>
                         </div>
+                        <h5>Layanan Servis Berkualitas</h5>
+                        <p>
+                            Kami menyediakan layanan servis kompor gas dan water heater dengan standar tinggi. 
+                            Mulai dari perbaikan kompor yang tidak menyala, api kecil, bau gas, hingga water heater yang tidak panas. 
+                            Setiap pekerjaan dilakukan langsung oleh teknisi ahli untuk memastikan kualitas dan keamanan terbaik bagi Anda.
+                        </p>
+                        <a class="service-link" href="#">Hubungi Kami</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="d-flex bg-light py-5 px-4">
-                        <!-- Tidak pakai gambar, pakai icon -->
-                        <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Expert Workers</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card h-100 bg-light">
+                        <div class="service-icon text-center">
+                            <i class="fa fa-users-cog"></i>
                         </div>
+                        <h5>Teknisi Ahli Berpengalaman</h5>
+                        <p>
+                            Tim kami berpengalaman menangani berbagai merek kompor dan water heater seperti Modena, Rinnai, Ariston, dan banyak lagi. 
+                            Setiap pemeriksaan dilakukan secara menyeluruh dengan pengerjaan yang teliti, serta selalu mengutamakan penggunaan sparepart original untuk hasil yang optimal.
+                        </p>
+                        <a class="service-link" href="#">Hubungi Kami</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex py-5 px-4">
-                        <!-- Tidak pakai gambar, pakai icon -->
-                        <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Modern Equipment</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-card h-100">
+                        <div class="service-icon text-center">
+                            <i class="fa fa-tools"></i>
                         </div>
+                        <h5>Peralatan Lengkap & Modern</h5>
+                        <p>
+                            Kami menggunakan peralatan servis yang lengkap dan modern untuk memastikan seluruh proses perbaikan berjalan lancar dan maksimal. 
+                            Dari pengecekan kebocoran gas hingga penggantian komponen penting, semua dilakukan sesuai standar keamanan demi kenyamanan Anda.
+                        </p>
+                        <a class="service-link" href="#">Hubungi Kami</a>
                     </div>
                 </div>
             </div>
@@ -134,23 +194,24 @@
 
 
     <!-- About Start -->
+    
+    <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 pt-4" style="min-height: 400px;">
                     <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-                        <!-- Bagian ini pakai gambar, gambar ada di public/carserv/img/about.jpg -->
                         <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/about.jpg') }}" style="object-fit: cover;" alt="">
                         <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                            <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Years</span></h1>
-                            <h4 class="text-white">Experience</h4>
+                            <h1 class="display-4 text-white mb-0">10 <span class="fs-4">Tahun</span></h1>
+                            <h4 class="text-white">Berpengalaman</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h6 class="text-primary text-uppercase">// About Us //</h6>
-                    <h1 class="mb-4"><span class="text-primary">CarServ</span> Is The Best Place For Your Auto Care</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h6 class="text-primary text-uppercase">// Tentang Kami //</h6>
+                    <h1 class="mb-4"><span class="text-primary">GasHome</span> Adalah Jasa Servis Kompor Gas & Water Heater Terpercaya di Jabodetabek</h1>
+                    <p class="mb-4" style="text-align: justify; text-justify: inter-word;">GasHome menyediakan layanan servis kompor gas dan water heater panggilan untuk area Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Kami menangani berbagai kerusakan seperti kompor tidak menyala, api kecil, bau gas, water heater tidak panas, error, hingga penggantian sparepart. Dengan teknisi berpengalaman lebih dari 15 tahun dan peralatan lengkap, kami memastikan setiap perbaikan aman, cepat, dan bergaransi.</p>
                     <div class="row g-4 mb-3 pb-3">
                         <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                             <div class="d-flex">
@@ -158,8 +219,8 @@
                                     <span class="fw-bold text-secondary">01</span>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>Professional & Expert</h6>
-                                    <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                    <h6 style="">Profesional & Berpengalaman</h6>
+                                    <span style="text-align: justify; display: block; text-justify: inter-word;">Teknisi ahli dalam menangani servis kompor gas, water heater gas maupun listrik, serta pengecekan kebocoran gas. Sudah berpengalaman memperbaiki berbagai merek seperti Rinnai, Modena, Ariston, Electrolux, dan lainnya.</span>
                                 </div>
                             </div>
                         </div>
@@ -169,8 +230,8 @@
                                     <span class="fw-bold text-secondary">02</span>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>Quality Servicing Center</h6>
-                                    <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                    <h6 style="">Pelayanan Cepat & Berkualitas</h6>
+                                    <span style="text-align: justify; display: block; text-justify: inter-word;">Kami mengutamakan kualitas servis dengan standar tinggi. Pemeriksaan dilakukan secara menyeluruh, hasil perbaikan rapi, dan menggunakan sparepart original untuk memastikan usia pakai lebih panjang.</span>
                                 </div>
                             </div>
                         </div>
@@ -180,13 +241,13 @@
                                     <span class="fw-bold text-secondary">03</span>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>Awards Winning Workers</h6>
-                                    <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                    <h6 style="">Teknisi Terpercaya & Bergaransi</h6>
+                                    <span style="text-align: justify; display: block; text-justify: inter-word;">Setiap pekerjaan ditangani oleh teknisi bersertifikat dan menggunakan metode servis yang aman. Kami memberikan garansi untuk setiap layanan agar pelanggan merasa nyaman dan percaya.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="" class="btn btn-primary py-3 px-5">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                    <a href="{{ url('/contact') }}" class="btn btn-primary py-3 px-5" style="">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </div>
         </div>
@@ -227,27 +288,27 @@
     <div class="container-xxl service py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// Our Services //</h6>
-                <h1 class="mb-5">Explore Our Services</h1>
+                <h6 class="text-primary text-uppercase">// Jasa Kami //</h6>
+                <h1 class="mb-5">Jelajahi Jasa Kami</h1>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
                     <div class="nav w-100 nav-pills me-4">
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                             <i class="fa fa-car-side fa-2x me-3"></i>
-                            <h4 class="m-0">Diagnostic Test</h4>
+                            <h4 class="m-0">Pemeriksaan & Perbaikan Kompor Gas Profesional</h4>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                             <i class="fa fa-car fa-2x me-3"></i>
-                            <h4 class="m-0">Engine Servicing</h4>
+                            <h4 class="m-0">Servis Water Heater Gas & Listrik</h4>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
                             <i class="fa fa-cog fa-2x me-3"></i>
-                            <h4 class="m-0">Tires Replacement</h4>
+                            <h4 class="m-0">Pengecekan Keamanan Kompor & Jalur Gas</h4>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
                             <i class="fa fa-oil-can fa-2x me-3"></i>
-                            <h4 class="m-0">Oil Changing</h4>
+                            <h4 class="m-0">Penggantian Sparepart Kompor & Water Heater</h4>
                         </button>
                     </div>
                 </div>
@@ -262,11 +323,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <h3 class="mb-3">Pemeriksaan & Perbaikan Kompor Gas Profesional</h3>
+                                    <p class="mb-4">Layanan perbaikan kompor gas untuk masalah api kecil, api merah, kompor tidak menyala, bau gas, hingga pemantik rusak. Pemeriksaan dilakukan menyeluruh untuk memastikan jalur gas aman dan berfungsi normal.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Api Tidak Menyala / Api Kecil</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Pemantik / Igniter Bermasalah</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Api Merah / Tidak Stabil</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Pemeriksaan Jalur Gas & Keamanan</p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
@@ -280,11 +342,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <h3 class="mb-3">Servis Water Heater Gas & Listrik</h3>
+                                    <p class="mb-4">Melayani perbaikan water heater yang tidak panas, air hanya hangat, error, atau menyala sebentar lalu mati. Kami menangani water heater gas dan listrik dari berbagai merek seperti Modena, Rinnai, Ariston, dan lainnya.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Water Heater Tidak Panas</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Sensor / Thermostat Bermasalah</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Flushing & Pembersihan Kerak</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Perbaikan Water Heater Gas & Listrik</p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
@@ -298,11 +361,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <h3 class="mb-3">Pengecekan Keamanan Kompor & Jalur Gas</h3>
+                                    <p class="mb-4">Layanan pengecekan kebocoran gas, selang, regulator, valve, dan sambungan pipa untuk memastikan penggunaan kompor tetap aman. Cocok untuk rumah, apartemen, dan tempat usaha.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Cek Kebocoran Gas</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Pemeriksaan Regulator & Selang</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Cek Jalur Gas & Valve</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Uji Keamanan & Kalibrasi</p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
@@ -316,11 +380,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <h3 class="mb-3">Penggantian Sparepart Kompor & Water Heater</h3>
+                                    <p class="mb-4">Kami menyediakan penggantian sparepart kompor dan water heater dengan komponen original agar lebih aman dan tahan lama. Mendukung berbagai merek dan tipe.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Burner / Kompor Head</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Igniter / Pemantik</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Thermostat / Sensor</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Elemen Pemanas & Komponen Listrik</p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
@@ -331,138 +396,396 @@
         </div>
     </div>
     <!-- Service End -->
-
-
-    <!-- Booking Start -->
-    <div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">Book For A Service</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Booking End -->
-
-
-    <!-- Team Start -->
+    
+    <!-- Brand Section Start -->
+    <style>
+        body, html {
+            overflow-x: hidden;
+        }
+        /* Brand carousel styles */
+        .brand-carousel .brand-logo-item {
+            text-align: center;
+            padding: 18px 12px 6px 12px;
+        }
+        .brand-carousel .brand-logo-item img {
+            max-width: 90px;
+            width: 80vw;
+            height: auto;
+            max-height: 85px;
+            display: inline-block;
+            margin: 0 auto 10px auto;
+            /* Cegah gambar gepeng & burem */
+            object-fit: contain;
+            aspect-ratio: 1.5/1; /* ratio mendekati landscape banner logo pada umumnya */
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        @media (max-width: 480px) {
+            .brand-carousel .brand-logo-item img {
+                max-width: 70px;
+                max-height: 57px;
+                width: 38vw;
+                aspect-ratio: 1.3/1;
+            }
+        }
+        .brand-carousel .brand-logo-item div {
+            font-size: 14px;
+            font-weight: 500;
+            color: #3d3d3d;
+        }
+        .brand-section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// Our Technicians //</h6>
-                <h1 class="mb-5">Our Expert Technicians</h1>
+            <div class="brand-section-title">
+                <h6 class="text-primary text-uppercase">// Brand Kompor & Water Heater //</h6>
+                <h2 class="mb-4">Brand Kompor & Water Heater Yang Kami Layani</h2>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('carserv/img/team-1.jpg') }}" alt="">
-                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="fw-bold mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
+            <div class="owl-carousel brand-carousel">
+                <!-- Kompor -->
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/ariston.png') }}" alt="Ariston" loading="lazy">
+                    <div>Ariston</div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('carserv/img/team-2.jpg') }}" alt="">
-                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="fw-bold mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/modena.png') }}" alt="Modena" loading="lazy">
+                    <div>Modena</div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('carserv/img/team-3.jpg') }}" alt="">
-                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="fw-bold mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/tecnogas.png') }}" alt="Tecnogas" loading="lazy">
+                    <div>Tecnogas</div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('carserv/img/team-4.jpg') }}" alt="">
-                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="fw-bold mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/azalea.png') }}" alt="Azelea" loading="lazy">
+                    <div>Azelea</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/delizia.png') }}" alt="Delizia" loading="lazy">
+                    <div>Delizia</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Solar" loading="lazy">
+                    <div>Panel Solar</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/teka.png') }}" alt="Teka" loading="lazy">
+                    <div>Teka</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/linea.png') }}" alt="Linea" loading="lazy">
+                    <div>Linea</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/electrolux.png') }}" alt="Elektrolux" loading="lazy">
+                    <div>Elektrolux</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/solahart.png') }}" alt="Solahart" loading="lazy">
+                    <div>Solahart</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/wika.png') }}" alt="Wika" loading="lazy">
+                    <div>Wika</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/stiebel.jpeg') }}" alt="Stiebel Elektron" loading="lazy">
+                    <div>Stiebel Elektron</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/lagermania.png') }}" alt="Lagermania" loading="lazy">
+                    <div>Lagermania</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Surya" loading="lazy">
+                    <div>Panel Surya</div>
+                </div>
+                <!-- Water Heater -->
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-ariston.png') }}" alt="Ariston WH" loading="lazy">
+                    <div>Ariston Water Heater</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-rheem.png') }}" alt="Rheem" loading="lazy">
+                    <div>Rheem</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-modena.png') }}" alt="Modena WH" loading="lazy">
+                    <div>Modena Water Heater</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-paloma.png') }}" alt="Paloma" loading="lazy">
+                    <div>Paloma</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-rinnai.png') }}" alt="Rinnai WH" loading="lazy">
+                    <div>Rinnai</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
+                    <div>Lagermania (WH)</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
+                    <div>Teka (WH)</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
+                    <div>Linea (WH)</div>
+                </div>
+                <div class="brand-logo-item">
+                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
+                    <div>Elektrolux (WH)</div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Team End -->
 
+    <script>
+        $(document).ready(function(){
+            $('.brand-carousel').owlCarousel({
+                loop:true,
+                margin:18,
+                autoplay:true,
+                autoplayTimeout:1900,
+                smartSpeed:850,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{items:2},
+                    380:{items:3},
+                    600:{items:4},
+                    992:{items:6}
+                }
+            });
+        });
+    </script>
+    <!-- Brand Section End -->
 
+        <!-- Lokasi Section Start -->
+        <style>
+            .lokasi-section {
+                background: #f6f6f6;
+                padding: 64px 0 56px 0;
+            }
+            .lokasi-title {
+                margin-bottom: 24px;
+            }
+            .lokasi-title h6 {
+                color: #0d6efd;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom:10px;
+                letter-spacing: 1.6px;
+            }
+            .lokasi-title h2 {
+                font-size: 2.05rem;
+                font-weight: 800;
+                margin-bottom: .7rem;
+                letter-spacing: .2px;
+            }
+            .lokasi-content-row {
+                display: flex;
+                align-items: stretch;
+                gap: 42px;
+                justify-content: center;
+                margin-top: 18px;
+            }
+            .lokasi-info-col, .lokasi-maps-col {
+                flex: 1 1 350px;
+                min-width: 290px;
+                max-width: 530px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .lokasi-info-col {
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 5px 24px 0 rgba(30,55,155,0.05);
+                padding: 32px 28px 26px 32px;
+                height: 100%;
+                width: 100%;
+            }
+            .lokasi-info-list {
+                padding: 0;
+                margin: 0 0 12px 0;
+                list-style: none;
+            }
+            .lokasi-info-list li {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                margin-bottom: 22px;
+                font-size: 1.05rem;
+            }
+            .lokasi-info-list .lokasi-icon {
+                color: #0d6efd;
+                font-size: 1.45rem;
+                min-width: 38px;
+                text-align: center;
+            }
+            .lokasi-info-list .lokasi-label {
+                font-weight: 600;
+                color: #222;
+            }
+            .lokasi-info-list .lokasi-detail {
+                color: #444;
+                display: block;
+                font-weight: 400;
+            }
+            .lokasi-cta {
+                display: flex;
+                gap: 16px;
+            }
+            .lokasi-cta a {
+                border-radius: 8px;
+                padding: 16px 0;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.12rem;
+                color: #fff;
+                transition: background .18s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 11px;
+            }
+            .lokasi-cta .wa-btn {
+                background: #25d366;
+            }
+            .lokasi-cta .wa-btn:hover {
+                background: #19b655;
+            }
+            .lokasi-maps-col {
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            .lokasi-maps-col iframe {
+                border: 0;
+                border-radius: 14px;
+                width: 100%;
+                min-height: 350px;
+                max-width: 510px;
+                box-shadow: 0 2px 14px 0 rgba(120,120,120,0.10);
+                height: 100%;
+            }
+            @media (max-width: 1024px) {
+                .lokasi-content-row {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 26px;
+                }
+                .lokasi-info-col,
+                .lokasi-maps-col {
+                    max-width: 100%;
+                    min-width: 0;
+                    width: 100%;
+                }
+                .lokasi-maps-col iframe {
+                    min-height: 230px;
+                    max-width: 100%;
+                }
+            }
+            @media (max-width: 576px) {
+                .lokasi-section {
+                    padding: 38px 0 28px 0;
+                }
+                .lokasi-title h2 {
+                    font-size: 1.15rem;
+                }
+                .lokasi-info-col {
+                    padding: 18px 6px 16px 7px;
+                }
+                .lokasi-cta a {
+                    padding: 11px 0;
+                    font-size: 0.98rem;
+                }
+                .lokasi-maps-col iframe {
+                    min-height: 170px;
+                }
+                .lokasi-info-list li {
+                    font-size: 0.97rem;
+                }
+            }
+        </style>
+        <div class="lokasi-section">
+            <div class="container">
+                <div class="lokasi-title text-center">
+                    <h6>// Lokasi Layanan //</h6>
+                    <h2>Jangkauan Layanan JABODETABEK & Sekitar</h2>
+                </div>
+                <div class="lokasi-content-row">
+                    <div class="lokasi-info-col">
+                        <ul class="lokasi-info-list">
+                            <li>
+                                <span class="lokasi-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <span class="lokasi-label">Alamat:</span><br>
+                                    <span class="lokasi-detail">
+                                        Jl. Contoh No. 123, Jakarta Selatan, DKI Jakarta <br>
+                                        <small style="color:#888;">(Kunjungan ke lokasi pelanggan - Workshop tidak menerima kunjungan tanpa janji)</small>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lokasi-icon"><i class="fas fa-shipping-fast"></i></span>
+                                <div>
+                                    <span class="lokasi-label">Area Layanan:</span><br>
+                                    <span class="lokasi-detail">
+                                        Jakarta, Bogor, Depok, Tangerang, Bekasi <br>
+                                        <span style="color: #2196f3; font-size: 95%;">(Jabodetabek & sekitarnya, bisa request luar kota)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lokasi-icon"><i class="fas fa-clock"></i></span>
+                                <div>
+                                    <span class="lokasi-label">Jam Layanan:</span><br>
+                                    <span class="lokasi-detail">
+                                        Setiap Hari - 24 Jam <br>
+                                        <span style="color:#2196f3">*Siap melayani kebutuhan Anda kapan saja</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lokasi-icon"><i class="fab fa-whatsapp"></i></span>
+                                <div>
+                                    <span class="lokasi-label">WhatsApp:</span><br>
+                                    <span class="lokasi-detail">
+                                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" style="color:#25d366;font-weight:600;text-decoration:none;">
+                                            +62 812-3456-7890 <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="lokasi-cta mt-2">
+                            <a href="https://wa.me/6281234567890" class="wa-btn" target="_blank" rel="noopener" style="font-size:1.15rem;">
+                                <i class="fab fa-whatsapp"></i>Chat WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lokasi-maps-col">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793717.1064921314!2d106.3657386707756!3d-6.229728461154552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1575c646999%3A0xcc840e3e8bec5c66!2sJabodetabek!5e0!3m2!1sen!2sid!4v1681510899641!5m2!1sen!2sid" 
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Jangkauan Jabodetabek">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Lokasi Section End -->
+    
+    
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">

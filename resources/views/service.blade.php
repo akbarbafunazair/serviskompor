@@ -193,25 +193,62 @@
         </div>
         <div class="row g-4 align-items-center justify-content-center">
             <div class="brand-logo-col text-center">
-                <img src="{{ asset('carserv/img/brand-kompor-rinnai.png') }}" alt="Rinnai" class="img-fluid mb-2">
-                <div>Rinnai</div>
+                <img src="{{ asset('carserv/img/ariston.png') }}" alt="Ariston" class="img-fluid mb-2">
+                <div>Ariston</div>
             </div>
             <div class="brand-logo-col text-center">
-                <img src="{{ asset('carserv/img/brand-kompor-modena.png') }}" alt="Modena" class="img-fluid mb-2">
+                <img src="{{ asset('carserv/img/modena.png') }}" alt="Modena" class="img-fluid mb-2">
                 <div>Modena</div>
             </div>
             <div class="brand-logo-col text-center">
-                <img src="{{ asset('carserv/img/brand-kompor-domo.png') }}" alt="Domo" class="img-fluid mb-2">
-                <div>Domo</div>
+                <img src="{{ asset('carserv/img/tecnogas.png') }}" alt="Tecnogas" class="img-fluid mb-2">
+                <div>Tecnogas</div>
             </div>
             <div class="brand-logo-col text-center">
-                <img src="{{ asset('carserv/img/brand-kompor-rubenz.png') }}" alt="Rubenz" class="img-fluid mb-2">
-                <div>Rubenz</div>
+                <img src="{{ asset('carserv/img/azalea.png') }}" alt="Azelea" class="img-fluid mb-2">
+                <div>Azelea</div>
             </div>
             <div class="brand-logo-col text-center">
-                <img src="{{ asset('carserv/img/brand-kompor-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
-                <div>Lainnya</div>
+                <img src="{{ asset('carserv/img/delizia.png') }}" alt="Delizia" class="img-fluid mb-2">
+                <div>Delizia</div>
             </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Solar" class="img-fluid mb-2">
+                <div>Panel Solar</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/teka.png') }}" alt="Teka" class="img-fluid mb-2">
+                <div>Teka</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/linea.png') }}" alt="Linea" class="img-fluid mb-2">
+                <div>Linea</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/electrolux.png') }}" alt="Elektrolux" class="img-fluid mb-2">
+                <div>Elektrolux</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/solahart.png') }}" alt="Solahart" class="img-fluid mb-2">
+                <div>Solahart</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/wika.png') }}" alt="Wika" class="img-fluid mb-2">
+                <div>Wika</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/stiebel.jpeg') }}" alt="Stiebel Elektron" class="img-fluid mb-2">
+                <div>Stiebel Elektron</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/lagermania.png') }}" alt="Lagermania" class="img-fluid mb-2">
+                <div>Lagermania</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Surya" class="img-fluid mb-2">
+                <div>Panel Surya</div>
+            </div>
+        </div>
         </div>
         <hr class="my-5" />
         <div class="row justify-content-center mb-4 mt-5">
@@ -227,23 +264,35 @@
             </div>
             <div class="brand-logo-col text-center">
                 <img src="{{ asset('carserv/img/brand-wh-rheem.png') }}" alt="Rheem" class="img-fluid mb-2">
-                <div>Rheem</div>
-            </div>
-            <div class="brand-logo-col text-center">
-                <img src="{{ asset('carserv/img/brand-wh-modena.png') }}" alt="Modena WH" class="img-fluid mb-2">
                 <div>Modena</div>
             </div>
             <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-modena.png') }}" alt="Modena WH" class="img-fluid mb-2">
+                <div>Tecnogas</div>
+            </div>
+            <div class="brand-logo-col text-center">
                 <img src="{{ asset('carserv/img/brand-wh-paloma.png') }}" alt="Paloma" class="img-fluid mb-2">
-                <div>Paloma</div>
+                <div>Azelea</div>
             </div>
             <div class="brand-logo-col text-center">
                 <img src="{{ asset('carserv/img/brand-wh-rinnai.png') }}" alt="Rinnai WH" class="img-fluid mb-2">
-                <div>Rinnai</div>
+                <div>Delizia</div>
             </div>
             <div class="brand-logo-col text-center">
                 <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
-                <div>Lainnya</div>
+                <div>Lagermania</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
+                <div>Teka</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
+                <div>Linea</div>
+            </div>
+            <div class="brand-logo-col text-center">
+                <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" class="img-fluid mb-2">
+                <div>Elektrolux</div>
             </div>
         </div>
     </div>

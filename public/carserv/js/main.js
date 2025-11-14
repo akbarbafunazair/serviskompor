@@ -105,6 +105,22 @@
             }
         }
     });
+
+
+    // Brand carousel
+    $(".brand-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 1900,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 2 },
+            480: { items: 3 },
+            768: { items: 4 },
+            992: { items: 6 }
+        }
+    });
     
 })(jQuery);
 
