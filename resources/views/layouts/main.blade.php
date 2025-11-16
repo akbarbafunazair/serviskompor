@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CarServ - Car Repair HTML Template</title>
+    <title>Servis Kompor & Water Heather Professional - Jabodetabek </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -41,34 +41,34 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('carserv/img/carousel-bg-1.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('carserv/img/kompor.jpg') }}" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Repair Service Center</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Layanan Servis Kompor //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Ahli Servis Kompor Semua Merk, Cepat dan Terpercaya</h1>
+                                    <a href="{{ route('contact') }}" class="btn btn-primary py-3 px-5 animated slideInDown">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="img-fluid" src="{{ asset('carserv/img/carousel-1.png') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('carserv/img/hotpoint.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('carserv/img/carousel-bg-2.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('carserv/img/GasHome.jpg') }}" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Wash Service Center</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Layanan Servis Water Heather //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Ahli Servis Water Heather Semua Merk, Cepat dan Terpecaya</h1>
+                                    <a href="{{ route('contact') }}" class="btn btn-primary py-3 px-5 animated slideInDown">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="img-fluid" src="{{ asset('carserv/img/carousel-2.png') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('carserv/img/water.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                             Mulai dari perbaikan kompor yang tidak menyala, api kecil, bau gas, hingga water heater yang tidak panas. 
                             Setiap pekerjaan dilakukan langsung oleh teknisi ahli untuk memastikan kualitas dan keamanan terbaik bagi Anda.
                         </p>
-                        <a class="service-link" href="#">Hubungi Kami</a>
+                        <a class="service-link" href="{{ route('contact') }}">Hubungi Kami</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.3s">
@@ -171,7 +171,7 @@
                             Tim kami berpengalaman menangani berbagai merek kompor dan water heater seperti Modena, Rinnai, Ariston, dan banyak lagi. 
                             Setiap pemeriksaan dilakukan secara menyeluruh dengan pengerjaan yang teliti, serta selalu mengutamakan penggunaan sparepart original untuk hasil yang optimal.
                         </p>
-                        <a class="service-link" href="#">Hubungi Kami</a>
+                        <a class="service-link" href="{{ route('contact') }}">Hubungi Kami</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.5s">
@@ -184,7 +184,7 @@
                             Kami menggunakan peralatan servis yang lengkap dan modern untuk memastikan seluruh proses perbaikan berjalan lancar dan maksimal. 
                             Dari pengecekan kebocoran gas hingga penggantian komponen penting, semua dilakukan sesuai standar keamanan demi kenyamanan Anda.
                         </p>
-                        <a class="service-link" href="#">Hubungi Kami</a>
+                        <a class="service-link" href="{{ route('contact') }}">Hubungi Kami</a>
                     </div>
                 </div>
             </div>
@@ -200,13 +200,16 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 pt-4" style="min-height: 400px;">
-                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/about.jpg') }}" style="object-fit: cover;" alt="">
-                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                            <h1 class="display-4 text-white mb-0">10 <span class="fs-4">Tahun</span></h1>
-                            <h4 class="text-white">Berpengalaman</h4>
-                        </div>
+                <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/4.jpeg') }}" style="object-fit: cover;" alt="">
+                    <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, 0.38); border-radius: 8px;">
+                        <h1 class="display-4 mb-0">
+                            <span style="color: #dc3545;">10</span> 
+                            <span class="fs-4 text-white">Tahun</span>
+                        </h1>
+                        <h4 class="text-white">Berpengalaman</h4>
                     </div>
+                </div>
                 </div>
                 <div class="col-lg-6">
                     <h6 class="text-primary text-uppercase">// Tentang Kami //</h6>
@@ -261,23 +264,23 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-check fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                    <p class="text-white mb-0">Years Experience</p>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">10</h2>
+                    <p class="text-white mb-0">Tahun Pengalaman</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                     <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                    <p class="text-white mb-0">Expert Technicians</p>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">10</h2>
+                    <p class="text-white mb-0">Teknisi Berpengalaman</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
                     <i class="fa fa-users fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                    <p class="text-white mb-0">Satisfied Clients</p>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1000</h2>
+                    <p class="text-white mb-0">Pelanggan Puas</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                     <i class="fa fa-car fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                    <p class="text-white mb-0">Compleate Projects</p>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1000</h2>
+                    <p class="text-white mb-0">Layanan Terselesaikan</p>
                 </div>
             </div>
         </div>
@@ -295,19 +298,19 @@
                 <div class="col-lg-4">
                     <div class="nav w-100 nav-pills me-4">
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <i class="fa fa-fire fa-2x me-3"></i>
                             <h4 class="m-0">Pemeriksaan & Perbaikan Kompor Gas Profesional</h4>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <i class="fa fa-car fa-2x me-3"></i>
+                            <i class="fa fa-hot-tub fa-2x me-3"></i>
                             <h4 class="m-0">Servis Water Heater Gas & Listrik</h4>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <i class="fa fa-cog fa-2x me-3"></i>
+                            <i class="fa fa-gas-pump fa-2x me-3"></i>
                             <h4 class="m-0">Pengecekan Keamanan Kompor & Jalur Gas</h4>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <i class="fa fa-oil-can fa-2x me-3"></i>
+                            <i class="fa fa-cogs fa-2x me-3"></i>
                             <h4 class="m-0">Penggantian Sparepart Kompor & Water Heater</h4>
                         </button>
                     </div>
@@ -318,18 +321,18 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/service-1.jpg') }}"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/31.jpg') }}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-3">Pemeriksaan & Perbaikan Kompor Gas Profesional</h3>
                                     <p class="mb-4">Layanan perbaikan kompor gas untuk masalah api kecil, api merah, kompor tidak menyala, bau gas, hingga pemantik rusak. Pemeriksaan dilakukan menyeluruh untuk memastikan jalur gas aman dan berfungsi normal.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Api Tidak Menyala / Api Kecil</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Pemantik / Igniter Bermasalah</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Api Merah / Tidak Stabil</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Pemeriksaan Jalur Gas & Keamanan</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <p><i class="fa fa-fire text-danger me-3"></i>Api Tidak Menyala / Api Kecil</p>
+                                    <p><i class="fa fa-bolt text-warning me-3"></i>Pemantik / Igniter Bermasalah</p>
+                                    <p><i class="fa fa-burn text-danger me-3"></i>Api Merah / Tidak Stabil</p>
+                                    <p><i class="fa fa-gas-pump text-primary me-3"></i>Pemeriksaan Jalur Gas & Keamanan</p>
+                                    <a href="{{ url('/contact') }}" class="btn btn-primary py-3 px-5 mt-3">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -337,18 +340,18 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/service-2.jpg') }}"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/32.jpg') }}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-3">Servis Water Heater Gas & Listrik</h3>
                                     <p class="mb-4">Melayani perbaikan water heater yang tidak panas, air hanya hangat, error, atau menyala sebentar lalu mati. Kami menangani water heater gas dan listrik dari berbagai merek seperti Modena, Rinnai, Ariston, dan lainnya.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Water Heater Tidak Panas</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Sensor / Thermostat Bermasalah</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Flushing & Pembersihan Kerak</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Perbaikan Water Heater Gas & Listrik</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <p><i class="fa fa-tint text-info me-3"></i>Water Heater Tidak Panas</p>
+                                    <p><i class="fa fa-thermometer-half text-danger me-3"></i>Sensor / Thermostat Bermasalah</p>
+                                    <p><i class="fa fa-water text-primary me-3"></i>Flushing & Pembersihan Kerak</p>
+                                    <p><i class="fa fa-hot-tub text-warning me-3"></i>Perbaikan Water Heater Gas & Listrik</p>
+                                    <a href="{{ url('/contact') }}" class="btn btn-primary py-3 px-5 mt-3">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -356,18 +359,18 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/service-3.jpg') }}"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/33.jpg') }}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-3">Pengecekan Keamanan Kompor & Jalur Gas</h3>
                                     <p class="mb-4">Layanan pengecekan kebocoran gas, selang, regulator, valve, dan sambungan pipa untuk memastikan penggunaan kompor tetap aman. Cocok untuk rumah, apartemen, dan tempat usaha.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Cek Kebocoran Gas</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Pemeriksaan Regulator & Selang</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Cek Jalur Gas & Valve</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Uji Keamanan & Kalibrasi</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <p><i class="fa fa-gas-pump text-primary me-3"></i>Cek Kebocoran Gas</p>
+                                    <p><i class="fa fa-sliders-h text-success me-3"></i>Pemeriksaan Regulator & Selang</p>
+                                    <p><i class="fa fa-random text-warning me-3"></i>Cek Jalur Gas & Valve</p>
+                                    <p><i class="fa fa-shield-alt text-success me-3"></i>Uji Keamanan & Kalibrasi</p>
+                                    <a href="{{ url('/contact') }}" class="btn btn-primary py-3 px-5 mt-3">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -375,18 +378,18 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/service-4.jpg') }}"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/34.jpg') }}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-3">Penggantian Sparepart Kompor & Water Heater</h3>
                                     <p class="mb-4">Kami menyediakan penggantian sparepart kompor dan water heater dengan komponen original agar lebih aman dan tahan lama. Mendukung berbagai merek dan tipe.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Burner / Kompor Head</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Igniter / Pemantik</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Thermostat / Sensor</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Elemen Pemanas & Komponen Listrik</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <p><i class="fa fa-toolbox text-secondary me-3"></i>Burner / Kompor Head</p>
+                                    <p><i class="fa fa-bolt text-warning me-3"></i>Igniter / Pemantik</p>
+                                    <p><i class="fa fa-thermometer-quarter text-danger me-3"></i>Thermostat / Sensor</p>
+                                    <p><i class="fa fa-cogs text-primary me-3"></i>Elemen Pemanas & Komponen Listrik</p>
+                                    <a href="{{ url('/contact') }}" class="btn btn-primary py-3 px-5 mt-3">Hubungi Kami<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -405,144 +408,112 @@
         /* Brand carousel styles */
         .brand-carousel .brand-logo-item {
             text-align: center;
-            padding: 18px 12px 6px 12px;
+            padding: 22px 14px 8px 14px;
         }
         .brand-carousel .brand-logo-item img {
-            max-width: 90px;
-            width: 80vw;
+            max-width: 148px;    /* LEBIH BESAR lagi */
+            width: 115vw;        /* LEBIH BESAR lagi */
             height: auto;
-            max-height: 85px;
+            max-height: 137px;   /* LEBIH BESAR lagi */
             display: inline-block;
-            margin: 0 auto 10px auto;
+            margin: 0 auto 13px auto;
             /* Cegah gambar gepeng & burem */
             object-fit: contain;
             aspect-ratio: 1.5/1; /* ratio mendekati landscape banner logo pada umumnya */
             image-rendering: auto;
             image-rendering: crisp-edges;
             image-rendering: -webkit-optimize-contrast;
+            transition: transform 0.18s cubic-bezier(.4,2,.6,.9);
+        }
+        /* Efek hover biar atraktif sedikit */
+        .brand-carousel .brand-logo-item img:hover {
+            transform: scale(1.11);
         }
         @media (max-width: 480px) {
             .brand-carousel .brand-logo-item img {
-                max-width: 70px;
-                max-height: 57px;
-                width: 38vw;
-                aspect-ratio: 1.3/1;
+                max-width: 118px;     /* LEBIH BESAR lagi */
+                max-height: 96px;     /* LEBIH BESAR lagi */
+                width: 68vw;          /* LEBIH BESAR lagi */
+                aspect-ratio: 1.32/1;
             }
         }
         .brand-carousel .brand-logo-item div {
-            font-size: 14px;
+            font-size: 17px;
             font-weight: 500;
             color: #3d3d3d;
         }
         .brand-section-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 44px;
         }
     </style>
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="brand-section-title">
-                <h6 class="text-primary text-uppercase">// Brand Kompor & Water Heater //</h6>
-                <h2 class="mb-4">Brand Kompor & Water Heater Yang Kami Layani</h2>
-            </div>
-            <div class="owl-carousel brand-carousel">
-                <!-- Kompor -->
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/ariston.png') }}" alt="Ariston" loading="lazy">
-                    <div>Ariston</div>
+            <div class="container">
+                <div class="brand-section-title">
+                    <h6 class="text-primary text-uppercase">// Brand Kompor & Water Heater //</h6>
+                    <h2 class="mb-4">Brand Kompor & Water Heater Yang Kami Layani</h2>
                 </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/modena.png') }}" alt="Modena" loading="lazy">
-                    <div>Modena</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/tecnogas.png') }}" alt="Tecnogas" loading="lazy">
-                    <div>Tecnogas</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/azalea.png') }}" alt="Azelea" loading="lazy">
-                    <div>Azelea</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/delizia.png') }}" alt="Delizia" loading="lazy">
-                    <div>Delizia</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Solar" loading="lazy">
-                    <div>Panel Solar</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/teka.png') }}" alt="Teka" loading="lazy">
-                    <div>Teka</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/linea.png') }}" alt="Linea" loading="lazy">
-                    <div>Linea</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/electrolux.png') }}" alt="Elektrolux" loading="lazy">
-                    <div>Elektrolux</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/solahart.png') }}" alt="Solahart" loading="lazy">
-                    <div>Solahart</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/wika.png') }}" alt="Wika" loading="lazy">
-                    <div>Wika</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/stiebel.jpeg') }}" alt="Stiebel Elektron" loading="lazy">
-                    <div>Stiebel Elektron</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/lagermania.png') }}" alt="Lagermania" loading="lazy">
-                    <div>Lagermania</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Surya" loading="lazy">
-                    <div>Panel Surya</div>
-                </div>
-                <!-- Water Heater -->
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-ariston.png') }}" alt="Ariston WH" loading="lazy">
-                    <div>Ariston Water Heater</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-rheem.png') }}" alt="Rheem" loading="lazy">
-                    <div>Rheem</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-modena.png') }}" alt="Modena WH" loading="lazy">
-                    <div>Modena Water Heater</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-paloma.png') }}" alt="Paloma" loading="lazy">
-                    <div>Paloma</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-rinnai.png') }}" alt="Rinnai WH" loading="lazy">
-                    <div>Rinnai</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
-                    <div>Lagermania (WH)</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
-                    <div>Teka (WH)</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
-                    <div>Linea (WH)</div>
-                </div>
-                <div class="brand-logo-item">
-                    <img src="{{ asset('carserv/img/brand-wh-others.png') }}" alt="Brand Lain" loading="lazy">
-                    <div>Elektrolux (WH)</div>
+                <div class="owl-carousel brand-carousel">
+                    <!-- Kompor -->
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/ariston.png') }}" alt="Ariston" loading="lazy">
+                        <div>Ariston</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/modena.png') }}" alt="Modena" loading="lazy">
+                        <div>Modena</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/tecnogas.png') }}" alt="Tecnogas" loading="lazy">
+                        <div>Tecnogas</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/azalea.png') }}" alt="Azelea" loading="lazy">
+                        <div>Azelea</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/delizia.png') }}" alt="Delizia" loading="lazy">
+                        <div>Delizia</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Solar" loading="lazy">
+                        <div>Panel Solar</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/teka.png') }}" alt="Teka" loading="lazy">
+                        <div>Teka</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/electrolux.png') }}" alt="Elektrolux" loading="lazy">
+                        <div>Elektrolux</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/solahart.png') }}" alt="Solahart" loading="lazy">
+                        <div>Solahart</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/wika.png') }}" alt="Wika" loading="lazy">
+                        <div>Wika</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/stiebel.jpeg') }}" alt="Stiebel Elektron" loading="lazy">
+                        <div>Stiebel Elektron</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/lagermania.png') }}" alt="Lagermania" loading="lazy">
+                        <div>Lagermania</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/panelsolar.png') }}" alt="Panel Surya" loading="lazy">
+                        <div>Panel Surya</div>
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="{{ asset('carserv/img/electrolux.png') }}" alt="Brand Lain" loading="lazy">
+                        <div>Elektrolux</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <script>
         $(document).ready(function(){
@@ -574,7 +545,7 @@
                 margin-bottom: 24px;
             }
             .lokasi-title h6 {
-                color: #0d6efd;
+                color:rgb(253, 13, 13);
                 text-transform: uppercase;
                 font-size: 15px;
                 font-weight: 700;
@@ -623,7 +594,7 @@
                 font-size: 1.05rem;
             }
             .lokasi-info-list .lokasi-icon {
-                color: #0d6efd;
+                color:rgb(255, 0, 0);
                 font-size: 1.45rem;
                 min-width: 38px;
                 text-align: center;
@@ -728,8 +699,8 @@
                                 <div>
                                     <span class="lokasi-label">Alamat:</span><br>
                                     <span class="lokasi-detail">
-                                        Jl. Contoh No. 123, Jakarta Selatan, DKI Jakarta <br>
-                                        <small style="color:#888;">(Kunjungan ke lokasi pelanggan - Workshop tidak menerima kunjungan tanpa janji)</small>
+                                        Pasar Minggu, Jakarta Selatan <br>
+                                        <small style="color:rgb(255, 0, 0);">(Kunjungan ke lokasi pelanggan - Workshop tidak menerima kunjungan tanpa janji)</small>
                                     </span>
                                 </div>
                             </li>
@@ -739,7 +710,7 @@
                                     <span class="lokasi-label">Area Layanan:</span><br>
                                     <span class="lokasi-detail">
                                         Jakarta, Bogor, Depok, Tangerang, Bekasi <br>
-                                        <span style="color: #2196f3; font-size: 95%;">(Jabodetabek & sekitarnya, bisa request luar kota)</span>
+                                        <span style="color:rgb(255, 0, 0); font-size: 95%;">(Jabodetabek & sekitarnya, bisa request luar kota)</span>
                                     </span>
                                 </div>
                             </li>
@@ -749,7 +720,7 @@
                                     <span class="lokasi-label">Jam Layanan:</span><br>
                                     <span class="lokasi-detail">
                                         Setiap Hari - 24 Jam <br>
-                                        <span style="color:#2196f3">*Siap melayani kebutuhan Anda kapan saja</span>
+                                        <span style="color:rgb(255, 0, 0);">*Siap melayani kebutuhan Anda kapan saja</span>
                                     </span>
                                 </div>
                             </li>
@@ -758,15 +729,15 @@
                                 <div>
                                     <span class="lokasi-label">WhatsApp:</span><br>
                                     <span class="lokasi-detail">
-                                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" style="color:#25d366;font-weight:600;text-decoration:none;">
-                                            +62 812-3456-7890 <i class="fab fa-whatsapp"></i>
+                                        <a href="https://wa.me/6282315715306?text=Hai%20GasHome%2C%20Saya%20menemukan%20Informasi%20anda%20di%20Website%20terkait%20Servis%20Kompor%20%26%20Water%20Heather.%20Saya%20ingin%20bertanya%20terlebih%20dahulu%2C%20Apakah%20Jadwal%20Tersedia%3F%20" target="_blank" rel="noopener" style="color:#25d366;font-weight:600;text-decoration:none;">
+                                            +62 823-1571-5306 <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </span>
                                 </div>
                             </li>
                         </ul>
                         <div class="lokasi-cta mt-2">
-                            <a href="https://wa.me/6281234567890" class="wa-btn" target="_blank" rel="noopener" style="font-size:1.15rem;">
+                            <a href="https://wa.me/6282315715306?text=Hai%20GasHome%2C%20Saya%20menemukan%20Informasi%20anda%20di%20Website%20terkait%20Servis%20Kompor%20%26%20Water%20Heather.%20Saya%20ingin%20bertanya%20terlebih%20dahulu%2C%20Apakah%20Jadwal%20Tersedia%3F%20" class="wa-btn" target="_blank" rel="noopener" style="font-size:1.15rem;">
                                 <i class="fab fa-whatsapp"></i>Chat WhatsApp
                             </a>
                         </div>
@@ -786,55 +757,340 @@
         <!-- Lokasi Section End -->
     
     
-    <!-- Testimonial Start -->
+    <!-- Testimoni Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
-                <h6 class="text-primary text-uppercase">// Testimonial //</h6>
-                <h1 class="mb-5">Our Clients Say!</h1>
+                <h6 class="text-primary text-uppercase">// Testimoni //</h6>
+                <h1 class="mb-5">Apa Kata Pelanggan Kami?</h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
+
                 <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-1.jpg') }}" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/cewe.png') }}" style="width: 80px; height: 80px;" alt="Testimoni Kartun 1">
+                    <h5 class="mb-0">Bu Rini</h5>
+                    <p>Ibu Rumah Tangga</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Pelayanannya bener-bener bagus, teknisinya datang tepat waktu! Kompor saya sekarang nyala lagi seperti baru. Makasih banyak ya!</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-2.jpg') }}" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/cowo.png') }}" style="width: 80px; height: 80px;" alt="Testimoni Kartun 2">
+                    <h5 class="mb-0">Pak Deden</h5>
+                    <p>Pegawai Kantor</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Seneng banget sama responnya yang cepat! Water heater rusak langsung diperbaiki, jadi nggak perlu mandi air dingin lagi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-3.jpg') }}" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/cewe.png') }}" style="width: 80px; height: 80px;" alt="Testimoni Kartun 3">
+                    <h5 class="mb-0">Mbak Yuni</h5>
+                    <p>Wirausaha</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Servisnya rapih, teknisi ramah dan informatif. Harga juga masih aman di kantong. Next time pasti order lagi deh!</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/testimonial-4.jpg') }}" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="{{ asset('carserv/img/cowo.png') }}" style="width: 80px; height: 80px;" alt="Testimoni Kartun 4">
+                    <h5 class="mb-0">Mas Rafi</h5>
+                    <p>Mahasiswa</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Panggil servis ke kosan cepet prosesnya. Enak banget, nggak ribet dan ramah. Recommended banget pokoknya!</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Testimoni End -->
 
     @include('partials.footer')
 
-    <!-- Back to Top -->
-    <a href="{{ asset('carserv/#') }}" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-chat-widget">
+        <!-- Chat Window -->
+        <div class="whatsapp-chat-window" id="whatsappChatWindow">
+            <div class="whatsapp-chat-header">
+                <div class="whatsapp-chat-avatar">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="whatsapp-chat-info">
+                    <h6 class="mb-0">GasHome Support</h6>
+                    <small class="text-muted">Biasanya merespons dalam beberapa menit</small>
+                </div>
+                <button class="whatsapp-chat-close" id="whatsappChatClose">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="whatsapp-chat-body">
+                <div class="whatsapp-chat-message">
+                    <div class="whatsapp-message-bubble">
+                        <p class="mb-0">Halo! 👋</p>
+                        <p class="mb-0">Ada yang bisa kami bantu? Klik tombol di bawah untuk chat langsung via WhatsApp!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="whatsapp-chat-footer">
+                <a href="https://wa.me/6282315715306?text=Hai%20GasHome%2C%20Saya%20menemukan%20Informasi%20anda%20di%20Website%20terkait%20Servis%20Kompor%20%26%20Water%20Heather.%20Saya%20ingin%20bertanya%20terlebih%20dahulu%2C%20Apakah%20Jadwal%20Tersedia%3F%20" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="whatsapp-chat-button">
+                    <i class="fab fa-whatsapp me-2"></i>
+                    Buka WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <!-- Floating Button -->
+        <button class="whatsapp-chat-button-float" id="whatsappChatButton">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-pulse"></span>
+        </button>
+    </div>
+
+    <style>
+        /* WhatsApp Chat Widget Styles */
+        .whatsapp-chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .whatsapp-chat-button-float {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25d366;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .whatsapp-chat-button-float:hover {
+            background: #20ba5a;
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #25d366;
+            animation: pulse 2s infinite;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .whatsapp-chat-window {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 350px;
+            max-width: calc(100vw - 40px);
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            animation: slideUp 0.3s ease;
+        }
+
+        .whatsapp-chat-window.active {
+            display: flex;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .whatsapp-chat-header {
+            background: #25d366;
+            color: white;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .whatsapp-chat-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .whatsapp-chat-info {
+            flex: 1;
+        }
+
+        .whatsapp-chat-info h6 {
+            color: white;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .whatsapp-chat-info small {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .whatsapp-chat-close {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+
+        .whatsapp-chat-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .whatsapp-chat-body {
+            padding: 20px;
+            background: #f0f0f0;
+            min-height: 120px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .whatsapp-message-bubble {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 12px;
+        }
+
+        .whatsapp-message-bubble p {
+            margin: 0;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .whatsapp-message-bubble p + p {
+            margin-top: 8px;
+        }
+
+        .whatsapp-chat-footer {
+            padding: 16px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .whatsapp-chat-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #25d366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .whatsapp-chat-button:hover {
+            background: #20ba5a;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        @media (max-width: 576px) {
+            .whatsapp-chat-widget {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .whatsapp-chat-window {
+                width: calc(100vw - 30px);
+                right: 0;
+            }
+
+            .whatsapp-chat-button-float {
+                width: 56px;
+                height: 56px;
+                font-size: 24px;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatButton = document.getElementById('whatsappChatButton');
+            const chatWindow = document.getElementById('whatsappChatWindow');
+            const closeButton = document.getElementById('whatsappChatClose');
+
+            // Toggle chat window
+            chatButton.addEventListener('click', function() {
+                chatWindow.classList.toggle('active');
+            });
+
+            // Close chat window
+            closeButton.addEventListener('click', function() {
+                chatWindow.classList.remove('active');
+            });
+
+            // Close when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.whatsapp-chat-widget')) {
+                    chatWindow.classList.remove('active');
+                }
+            });
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

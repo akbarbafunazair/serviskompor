@@ -1,13 +1,13 @@
 @include('partials.navbar')
 
 <!-- Page Header Start -->
-<div class="container-fluid page-header mb-5 p-0" style="background-image: url({{ asset('carserv/img/carousel-bg-1.jpg') }});">
+<div class="container-fluid page-header mb-5 p-0" style="background-image: url({{ asset('carserv/img/sumpal.jpg') }});">
     <div class="container-fluid page-header-inner py-5">
         <div class="container text-center">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Tentang Kami</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Tentang Kami</li>
                 </ol>
             </nav>
@@ -85,7 +85,7 @@
                         Mulai dari perbaikan kompor yang tidak menyala, api kecil, bau gas, hingga water heater yang tidak panas. 
                         Setiap pekerjaan dilakukan langsung oleh teknisi ahli untuk memastikan kualitas dan keamanan terbaik bagi Anda.
                     </p>
-                    <a class="service-link" href="#">Hubungi Kami</a>
+                    <a class="service-link" href="{{ route('contact') }}">Hubungi Kami</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.3s">
@@ -98,7 +98,7 @@
                         Tim kami berpengalaman menangani berbagai merek kompor dan water heater seperti Modena, Rinnai, Ariston, dan banyak lagi. 
                         Setiap pemeriksaan dilakukan secara menyeluruh dengan pengerjaan yang teliti, serta selalu mengutamakan penggunaan sparepart original untuk hasil yang optimal.
                     </p>
-                    <a class="service-link" href="#">Hubungi Kami</a>
+                    <a class="service-link" href="{{ route('contact') }}">Hubungi Kami</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.5s">
@@ -111,7 +111,7 @@
                         Kami menggunakan peralatan servis yang lengkap dan modern untuk memastikan seluruh proses perbaikan berjalan lancar dan maksimal. 
                         Dari pengecekan kebocoran gas hingga penggantian komponen penting, semua dilakukan sesuai standar keamanan demi kenyamanan Anda.
                     </p>
-                    <a class="service-link" href="#">Hubungi Kami</a>
+                    <a class="service-link" href="{{ route('contact') }}">Hubungi Kami</a>
                 </div>
             </div>
         </div>
@@ -126,9 +126,12 @@
         <div class="row g-5">
             <div class="col-lg-6 pt-4" style="min-height: 400px;">
                 <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/about.jpg') }}" style="object-fit: cover;" alt="">
-                    <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                        <h1 class="display-4 text-white mb-0">10 <span class="fs-4">Tahun</span></h1>
+                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('carserv/img/4.jpeg') }}" style="object-fit: cover;" alt="">
+                    <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, 0.38); border-radius: 8px;">
+                        <h1 class="display-4 mb-0">
+                            <span style="color: #dc3545;">10</span> 
+                            <span class="fs-4 text-white">Tahun</span>
+                        </h1>
                         <h4 class="text-white">Berpengalaman</h4>
                     </div>
                 </div>

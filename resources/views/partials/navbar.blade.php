@@ -36,22 +36,21 @@
         <div class="col-lg-7 px-5 text-start">
             <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                 <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                <small>Jabodetabek</small>
+                <small>Jakarta, Bogor, Depok, Tangerang, Bekasi</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center py-3">
                 <small class="far fa-clock text-primary me-2"></small>
-                <small>Senin - Minggu : 07.00 WIB - 10.00 WIB</small>
+                <small>Senin - Minggu : 24 Jam </small>
             </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
             <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                 <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small>+62 0823 1571 5306 </small>
+                <a href="https://wa.me/6282315715306?text=Hai%20GasHome%2C%20Saya%20menemukan%20Informasi%20anda%20di%20Website%20terkait%20Servis%20Kompor%20%26%20Water%20Heather.%20Saya%20ingin%20bertanya%20terlebih%20dahulu%2C%20Apakah%20Jadwal%20Tersedia%3F%20" target="_blank" style="text-decoration: none; color: inherit;">
+                    <small>+62 823 1571 5306 </small>
+                </a>
             </div>
             <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
             </div>
         </div>
@@ -86,7 +85,7 @@
                 Contact
             </a>
         </div>
-        <a href="https://wa.me/6282315715306" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+        <a href="https://wa.me/6282315715306?text=Hai%20GasHome%2C%20Saya%20menemukan%20Informasi%20anda%20di%20Website%20terkait%20Servis%20Kompor%20%26%20Water%20Heather.%20Saya%20ingin%20bertanya%20terlebih%20dahulu%2C%20Apakah%20Jadwal%20Tersedia%3F%20" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
             WHATSAPP<i class="fa fa-arrow-right ms-3"></i>
         </a>
     </div>
