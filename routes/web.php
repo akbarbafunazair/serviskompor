@@ -7,3 +7,5 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/service', [PageController::class, 'service'])->name('service');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/halaman1', [PageController::class, 'halaman1'])->name('halaman1');
+Route::get('/halaman2', [PageController::class, 'halaman2'])->name('halaman2');

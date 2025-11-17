@@ -4,9 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title>Servis Kompor & Water Heather Professional - Jabodetabek </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta tags ditambahkan -->
+    <meta name="keywords" content="Servis Kompor, Service Kompor Gas, Servis Water Heater, Service Water Heater, Kompor Gas, Water Heater Gas, Teknisi Kompor, Teknisi Water Heater, Jakarta, Bogor, Depok, Tangerang, Bekasi, Jabodetabek, Perbaikan Kompor, Perbaikan Water Heater, GasHome, Layanan Profesional, Komponen Kompor, Sparepart Water Heater, Layanan Panggilan Kompor, Kompor Modena, Kompor Rinnai, Kompor Ariston, Kompor Electrolux, Water Heater Ariston, Water Heater Solahart">
+    <meta name="description" content="GasHome - Jasa servis profesional untuk kompor gas dan water heater, melayani area Jabodetabek (Jakarta, Bogor, Depok, Tangerang, Bekasi) & sekitarnya. Teknisi berpengalaman, peralatan lengkap, garansi servis, dan siap panggilan 24 jam. Hubungi kami untuk solusi servis kompor & water heater terbaik.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Servis Kompor & Water Heater Professional Jabodetabek | GasHome">
+    <meta property="og:description" content="Servis Kompor Gas & Water Heater Terpercaya di Jabodetabek. Teknisi berpengalaman, jangkauan luas, layanan cepat, dan bergaransi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('carserv/img/kompor.jpg') }}">
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servis Kompor & Water Heater Professional Jabodetabek | GasHome">
+    <meta name="twitter:description" content="Jasa servis kompor & water heater bergaransi, siap panggilan area Jabodetabek. Solusi kompor & water heater nyala kembali!">
+    <meta name="twitter:image" content="{{ asset('carserv/img/kompor.jpg') }}">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Favicon -->
     <link href="{{ asset('carserv/img/favicon.ico') }}" rel="icon">
@@ -804,293 +822,6 @@
     <!-- Testimoni End -->
 
     @include('partials.footer')
-
-
-    <!-- WhatsApp Chat Widget -->
-    <div class="whatsapp-chat-widget">
-        <!-- Chat Window -->
-        <div class="whatsapp-chat-window" id="whatsappChatWindow">
-            <div class="whatsapp-chat-header">
-                <div class="whatsapp-chat-avatar">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="whatsapp-chat-info">
-                    <h6 class="mb-0">GasHome Support</h6>
-                    <small class="text-muted">Biasanya merespons dalam beberapa menit</small>
-                </div>
-                <button class="whatsapp-chat-close" id="whatsappChatClose">
-                    <i class="fa fa-times"></i>
-                </button>
-            </div>
-            <div class="whatsapp-chat-body">
-                <div class="whatsapp-chat-message">
-                    <div class="whatsapp-message-bubble">
-                        <p class="mb-0">Halo! 👋</p>
-                        <p class="mb-0">Ada yang bisa kami bantu? Klik tombol di bawah untuk chat langsung via WhatsApp!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="whatsapp-chat-footer">
-                <a href="https://wa.me/6282315715306?text=Hai%20GasHome%2C%20Saya%20menemukan%20Informasi%20anda%20di%20Website%20terkait%20Servis%20Kompor%20%26%20Water%20Heather.%20Saya%20ingin%20bertanya%20terlebih%20dahulu%2C%20Apakah%20Jadwal%20Tersedia%3F%20" 
-                   target="_blank" 
-                   rel="noopener" 
-                   class="whatsapp-chat-button">
-                    <i class="fab fa-whatsapp me-2"></i>
-                    Buka WhatsApp
-                </a>
-            </div>
-        </div>
-        
-        <!-- Floating Button -->
-        <button class="whatsapp-chat-button-float" id="whatsappChatButton">
-            <i class="fab fa-whatsapp"></i>
-            <span class="whatsapp-pulse"></span>
-        </button>
-    </div>
-
-    <style>
-        /* WhatsApp Chat Widget Styles */
-        .whatsapp-chat-widget {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 9999;
-        }
-
-        .whatsapp-chat-button-float {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: #25d366;
-            border: none;
-            color: white;
-            font-size: 28px;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            transition: all 0.3s ease;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .whatsapp-chat-button-float:hover {
-            background: #20ba5a;
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
-        }
-
-        .whatsapp-pulse {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: #25d366;
-            animation: pulse 2s infinite;
-            z-index: -1;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(1.5);
-                opacity: 0;
-            }
-        }
-
-        .whatsapp-chat-window {
-            position: absolute;
-            bottom: 80px;
-            right: 0;
-            width: 350px;
-            max-width: calc(100vw - 40px);
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-            display: none;
-            flex-direction: column;
-            overflow: hidden;
-            animation: slideUp 0.3s ease;
-        }
-
-        .whatsapp-chat-window.active {
-            display: flex;
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .whatsapp-chat-header {
-            background: #25d366;
-            color: white;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .whatsapp-chat-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-        }
-
-        .whatsapp-chat-info {
-            flex: 1;
-        }
-
-        .whatsapp-chat-info h6 {
-            color: white;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .whatsapp-chat-info small {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .whatsapp-chat-close {
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 0;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            transition: background 0.2s;
-        }
-
-        .whatsapp-chat-close:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .whatsapp-chat-body {
-            padding: 20px;
-            background: #f0f0f0;
-            min-height: 120px;
-            max-height: 300px;
-            overflow-y: auto;
-        }
-
-        .whatsapp-message-bubble {
-            background: white;
-            padding: 12px 16px;
-            border-radius: 8px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-            margin-bottom: 12px;
-        }
-
-        .whatsapp-message-bubble p {
-            margin: 0;
-            color: #333;
-            line-height: 1.5;
-        }
-
-        .whatsapp-message-bubble p + p {
-            margin-top: 8px;
-        }
-
-        .whatsapp-chat-footer {
-            padding: 16px;
-            background: white;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .whatsapp-chat-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #25d366;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            width: 100%;
-        }
-
-        .whatsapp-chat-button:hover {
-            background: #20ba5a;
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        @media (max-width: 576px) {
-            .whatsapp-chat-widget {
-                bottom: 15px;
-                right: 15px;
-            }
-
-            .whatsapp-chat-window {
-                width: calc(100vw - 30px);
-                right: 0;
-            }
-
-            .whatsapp-chat-button-float {
-                width: 56px;
-                height: 56px;
-                font-size: 24px;
-            }
-        }
-    </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const chatButton = document.getElementById('whatsappChatButton');
-            const chatWindow = document.getElementById('whatsappChatWindow');
-            const closeButton = document.getElementById('whatsappChatClose');
-
-            // Toggle chat window
-            chatButton.addEventListener('click', function() {
-                chatWindow.classList.toggle('active');
-            });
-
-            // Close chat window
-            closeButton.addEventListener('click', function() {
-                chatWindow.classList.remove('active');
-            });
-
-            // Close when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('.whatsapp-chat-widget')) {
-                    chatWindow.classList.remove('active');
-                }
-            });
-        });
-    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
